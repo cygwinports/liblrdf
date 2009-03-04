@@ -1,0 +1,7 @@
+category: Libs
+requires: cygwin libraptor-devel liblrdf2
+external-source: liblrdf
+sdesc: "Lightweight RDF library (development)"
+ldesc: "This is a library to make it easy to manipulate RDF files 
+describing LADSPA plugins. It can also be used for general RDF 
+manipulation."

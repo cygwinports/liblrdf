@@ -1,0 +1,74 @@
+liblrdf
+------------------------------------------
+This is a library to make it easy to manipulate RDF files describing 
+LADSPA plugins. It can also be used for general RDF manipulation.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libraptor1-1.4.18-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-2
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://sourceforge.net/projects/lrdf/
+
+Canonical download:
+  http://downloads.sourceforge.net/lrdf/
+
+-------------------------------------------
+
+Build instructions:
+  unpack liblrdf-0.4.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./liblrdf-0.4.0-X.cygport all
+
+This will create:
+  /usr/src/liblrdf-0.4.0-X-src.tar.bz2
+  /usr/src/liblrdf-devel-0.4.0-X.tar.bz2
+  /usr/src/liblrdf2-0.4.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+(liblrdf2)
+  /usr/bin/cyglrdf-2.dll
+  /usr/share/doc/liblrdf-0.4.0/AUTHORS
+  /usr/share/doc/liblrdf-0.4.0/COPYING
+  /usr/share/doc/liblrdf-0.4.0/ChangeLog
+  /usr/share/doc/liblrdf-0.4.0/INSTALL
+  /usr/share/doc/liblrdf-0.4.0/NEWS
+  /usr/share/doc/liblrdf-0.4.0/README
+  /usr/share/ladspa/rdf/ladspa.rdfs
+
+(liblrdf-devel)
+  /usr/include/lrdf.h
+  /usr/include/lrdf_types.h
+  /usr/lib/liblrdf.a
+  /usr/lib/liblrdf.dll.a
+  /usr/lib/liblrdf.la
+  /usr/lib/pkgconfig/lrdf.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.4.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

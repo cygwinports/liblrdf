@@ -1,0 +1,5 @@
+category: Libs
+sdesc: "Lightweight RDF library (sources)"
+ldesc: "This is a library to make it easy to manipulate RDF files 
+describing LADSPA plugins. It can also be used for general RDF 
+manipulation."

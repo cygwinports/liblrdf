@@ -1,5 +1,5 @@
 category: Libs
-requires: libraptor1
+requires: libgcc1 libraptor1
 external-source: liblrdf
 sdesc: "Lightweight RDF library (runtime)"
 ldesc: "This is a library to make it easy to manipulate RDF files 

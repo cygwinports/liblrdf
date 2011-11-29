@@ -1,8 +1,0 @@
---- origsrc/liblrdf-0.4.0/src/Makefile.am	2004-11-08 21:12:32.000000000 -0600
-+++ src/liblrdf-0.4.0/src/Makefile.am	2008-10-09 22:31:24.296875000 -0500
-@@ -5,4 +5,4 @@
- 
- liblrdf_la_SOURCES = lrdf.c lrdf_multi.c md5.c
- liblrdf_la_LIBADD = -lraptor2
--liblrdf_la_LDFLAGS = -version-info @LRDF_LIBTOOL_VERSION@
-+liblrdf_la_LDFLAGS = -version-info @LRDF_LIBTOOL_VERSION@ -no-undefined

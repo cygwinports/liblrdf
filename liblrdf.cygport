@@ -1,18 +1,17 @@
 NAME="liblrdf"
 VERSION=0.5.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="LADSPA plugin RDF library"
 DESCRIPTION="This is a library to make it easy to manipulate RDF files
 describing LADSPA plugins. It can also be used for general RDF manipulation."
 HOMEPAGE="http://github.com/swh/LRDF"
-GIT_URI="git://github.com/swh/LRDF.git"
-GIT_TAG=${VERSION}
-inherit git
-
+SRC_URI="https://github.com/swh/LRDF/archive/${VERSION}/LRDF-${VERSION}.tar.gz"
+SRC_DIR="LRDF-${VERSION}"
 PATCH_URI="0.5.0-no-undefined.patch"
 
 PKG_NAMES="${NAME}2 ${NAME}-common ${NAME}-devel"
+liblrdf2_REQUIRES="liblrdf-common"
 liblrdf2_CONTENTS="usr/bin/cyglrdf-2.dll"
 liblrdf_common_CONTENTS="usr/share/"
 liblrdf_devel_CONTENTS="usr/include/ usr/lib/"
